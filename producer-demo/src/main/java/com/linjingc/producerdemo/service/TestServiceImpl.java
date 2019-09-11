@@ -1,9 +1,9 @@
-package com.linjingc.producerdemo.service.impl;
+package com.linjingc.producerdemo.service;
 
-import com.linjingc.producerdemo.service.TestService;
+import com.linjingc.apidemo.service.TestService;
 import org.apache.dubbo.config.annotation.Service;
 
-@Service(validation = "1.0.0",timeout = 3000)
+@Service(timeout = 3000)
 public class TestServiceImpl implements TestService {
 	@Override
 	public String test() {

@@ -1,14 +1,13 @@
 server:
-  port: 8085 #Tomcat端口
+  port: 8086 #Tomcat端口
 dubbo:
   application:
-    name: producer-demo #应用名
+    name: consumer-demo #应用名
   registry:
     address: zookeeper://127.0.0.1:2181 #zookeeper地址
   protocol:
     name: dubbo
     port: 20890 #dubbo服务暴露的端口
   scan:
-    base-packages: ba com.linjingc.producerdemo.service #扫描的包名
-
+    base-packages: ba com.linjingc.consumerdemo.service #扫描的包名
 
