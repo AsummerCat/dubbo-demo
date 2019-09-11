@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class HelloService {
 	@Reference
 	private TestService testService;
-	@Reference(group="hello",mock = "true")
+	@Reference(group="hello",mock = "true",id="sayServiceImpl")
 	private SayService sayService;
 	@Reference()
 	private SayService sayService1;

@@ -7,11 +7,6 @@ import org.apache.dubbo.config.annotation.Service;
 public class SayServiceImpl implements SayService {
 	@Override
 	public String sayHello() {
-		try {
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		return "再见了我的朋友1";
 	}
 }
