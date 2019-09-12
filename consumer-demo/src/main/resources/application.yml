@@ -5,6 +5,7 @@ dubbo:
     name: consumer-demo #应用名
   registry:
     address: zookeeper://127.0.0.1:2181 #zookeeper地址
+    client: curator
   protocol:
     name: dubbo
     port: 20890 #dubbo服务暴露的端口
