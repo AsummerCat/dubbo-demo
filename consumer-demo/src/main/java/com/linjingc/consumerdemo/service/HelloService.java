@@ -11,7 +11,7 @@ public class HelloService {
 	private TestService testService;
 	@Reference(group="hello",mock = "true",id="sayServiceImpl")
 	private SayService sayService;
-	@Reference()
+	@Reference(version = "1.0")
 	private SayService sayService1;
 
 	public String hello() {

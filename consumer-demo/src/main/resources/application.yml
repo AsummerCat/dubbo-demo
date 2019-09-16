@@ -3,6 +3,9 @@ server:
 dubbo:
   application:
     name: consumer-demo #应用名
+    qos-accept-foreign-ip: false
+    qos-port: 22223
+    qos-enable: true
   registry:
     address: zookeeper://127.0.0.1:2181 #zookeeper地址
     client: curator

@@ -3,6 +3,9 @@ server:
 dubbo:
   application:
     name: producer-demo #应用名
+    qos-accept-foreign-ip: false
+    qos-port: 33333
+    qos-enable: true
   registry:
     address: zookeeper://127.0.0.1:2181 #zookeeper地址
   protocol:
@@ -10,5 +13,3 @@ dubbo:
     port: 20890 #dubbo服务暴露的端口
   scan:
     base-packages: ba com.linjingc.producerdemo.service #扫描的包名
-
-
